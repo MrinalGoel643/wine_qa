@@ -1,5 +1,13 @@
 # Wine Quality Prediction System
 
+## AI Citation
+
+Few code snippets in this project were generated using Claude Sonnet 4.5 over the weeks of November 14th to November 25th 2025. 
+We utilized Claude Sonnet 4.5 for brainstorming and debugging tasks - especially while creating docker files and while deploying our code to Azure Functions. 
+Link to Mrinal’s chat history with Claude Sonnet 4.5 where she discusses issues faced while deploying code to Azure functions - https://claude.ai/share/803cf4b5-ff7a-4623-bd47-f99fd8345c12
+
+Additionally, we also utilized Claude Sonnet 4.5 to assist us with the issues we faced while creating and deploying the streamlit frontend. Prompts included - “I have a few untracked files that are creating git conflict issues, how do I resolve this?, how do I extend this streamlit container to use the entire width of the screen?
+
 A full-stack machine learning system that predicts wine quality based on physicochemical properties. The project implements a reproducible ML pipeline with cloud deployment and an interactive web interface.
 
 ## Project Overview
