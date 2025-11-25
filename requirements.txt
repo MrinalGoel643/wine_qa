@@ -21,3 +21,7 @@ pyyaml==6.0.1
 
 # Azure Functions -  neeeded for deployment to azure functions
 azure-functions==1.15.0
+
+# web app
+streamlit>=1.31.0
+requests>=2.31.0
