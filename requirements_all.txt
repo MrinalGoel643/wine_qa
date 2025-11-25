@@ -1,0 +1,27 @@
+# Data processing
+pandas==2.1.4
+numpy==1.26.2
+scikit-learn==1.3.2
+
+# Azure Storage
+azure-storage-blob==12.19.0
+azure-identity==1.15.0
+
+# ML tracking
+mlflow==2.9.2
+
+# API (for later steps)
+fastapi==0.109.0
+uvicorn==0.27.0
+pydantic==2.5.3
+
+# Utilities
+python-dotenv==1.0.0
+pyyaml==6.0.1
+
+# Azure Functions -  neeeded for deployment to azure functions
+azure-functions==1.15.0
+
+# web app
+streamlit>=1.31.0
+requests>=2.31.0
