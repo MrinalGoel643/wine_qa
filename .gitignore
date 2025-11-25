@@ -1,0 +1,12 @@
+venv
+*.env
+
+# Model artifacts
+models/
+*.pkl
+
+# MLFlow
+mlruns/
+mlartifacts/
+
+.python_packages/

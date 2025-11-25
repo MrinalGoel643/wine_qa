@@ -1,0 +1,52 @@
+# Wine Quality ML Pipeline Configuration
+
+# Data Configuration
+data:
+  container_name: "wine-quality-data"
+  train_file: "data/wine_train.csv"
+  val_file: "data/wine_val.csv"
+  test_file: "data/wine_test.csv"
+
+# Feature Engineering
+features:
+  target_column: "quality"
+  categorical_features:
+    - "wine_type"
+  numerical_features:
+    - "fixed acidity"
+    - "volatile acidity"
+    - "citric acid"
+    - "residual sugar"
+    - "chlorides"
+    - "free sulfur dioxide"
+    - "total sulfur dioxide"
+    - "density"
+    - "pH"
+    - "sulphates"
+    - "alcohol"
+
+# Model Configuration
+model:
+  random_state: 42
+  n_estimators: 100
+  max_depth: 10
+  min_samples_split: 5
+  min_samples_leaf: 2
+
+# Training Configuration
+training:
+  test_size: 0.2
+  validation_size: 0.1
+  random_state: 42
+
+# MLFlow Configuration
+mlflow:
+  experiment_name: "wine-quality-regression"
+  tracking_uri: "./mlruns"
+  artifact_location: "./mlartifacts"
+
+# Model Output
+output:
+  model_path: "models/wine_quality_model.pkl"
+  scaler_path: "models/scaler.pkl"
+  encoder_path: "models/encoder.pkl"

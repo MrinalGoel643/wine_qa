@@ -1,0 +1,37 @@
+.git
+.vscode
+venv/
+__pycache__
+.python_version
+*.pyc
+*.pyo
+.env
+.env.*
+!.env.example
+local.settings.json
+.DS_Store
+Thumbs.db
+
+# Exclude data files
+data/
+*.csv
+
+# Exclude MLFlow
+mlruns/
+mlartifacts/
+
+# Exclude docs
+*.md
+!README.md
+
+# Exclude training scripts
+train.py
+preprocess_wine_data.py
+download_from_azure.py
+upload_to_azure*.py
+run_experiments.py
+
+# Exclude Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
