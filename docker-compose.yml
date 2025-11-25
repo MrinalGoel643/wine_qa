@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  wine-quality-trainer:
+    build: .
+    container_name: wine-quality-trainer
+    environment:
+      - AZURE_STORAGE_CONNECTION_STRING=${AZURE_STORAGE_CONNECTION_STRING}
+      - AZURE_CONTAINER_NAME=${AZURE_CONTAINER_NAME}
+    volumes:
+      - ./models:/app/models
+      - ./mlruns:/app/mlruns
+      - ./mlartifacts:/app/mlartifacts
+    command: python train.py

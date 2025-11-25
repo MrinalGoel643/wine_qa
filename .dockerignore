@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Environment variables
+.env
+*.env
+!.env.example
+
+# Data files (will be downloaded from Azure)
+data/
+*.csv
+!*.example.csv
+
+# Model artifacts (will be generated)
+models/
+*.pkl
+
+# MLFlow
+mlruns/
+mlartifacts/
+
+# Git
+.git/
+.gitignore
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation
+*.md
+!README.md
+
+# Logs
+*.log
+
+# Backup files
+*.bak
